@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+    #submit_button {
+    display: block; 
+    margin: 0 auto; 
+    text-align: center; 
+    color: rgb(37, 200, 22);
+    border: rgb(139, 217, 22) 2px solid;
+    }
+    form {
+        width: 50%;
+        margin: 0 auto; 
+        text-align: center; 
+    }
+    h1{
+        text-align: center;
+        color: rgba(193, 112, 13, 0.742);
+    }
+    body{
+        background-color: blanchedalmond;
+    }
+    </style>
+</head>
+<body>
+    <h1>Welcome to result checker</h1>
+
+    <form action="/submit" method="POST">
+        <label for="pyt">Python:</label>
+        <input type="number" name="pyt" id="pyt" min="0" max="100">
+
+        <label for="php">PHP:</label>
+        <input type="number" name="php" id="php" min="0" max="100">
+
+        <label for="pyt">C++:</label>
+        <input type="number" name="cpp" id="cpp" min="0" max="100">
+
+        <label for="pyt">JAVA:</label>
+        <input type="number" name="java" id="java" min="0" max="100">
+
+        <label for="pyt">Assembly:</label>
+        <input type="number" name="assem" id="assem" min="0" max="100">
+        <br><br>
+        <input type="submit" value="SUBMIT" id="submit_button">
+
+    </form>
